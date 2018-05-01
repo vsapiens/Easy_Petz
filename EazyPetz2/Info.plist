@@ -37,14 +37,14 @@
 	<true/>
 	<key>MKDirectionsApplicationSupportedModes</key>
 	<array>
-		<string>MKDirectionsModeBike</string>
 		<string>MKDirectionsModeBus</string>
 		<string>MKDirectionsModeCar</string>
-		<string>MKDirectionsModePedestrian</string>
-		<string>MKDirectionsModeTrain</string>
+		<string>MKDirectionsModeTaxi</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Will you allow this app to always know your location?</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>La aplicación Eazy Pets quiere saber tu ubicación.</string>
+	<string>Do you allow this app to know your current location?</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>beyond_the_mountains.otf</string>

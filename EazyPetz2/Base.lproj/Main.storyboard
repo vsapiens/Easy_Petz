@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="beyond_the_mountains.ttf">
+        <array key="beyond_the_mountains.otf">
             <string>BeyondTheMountains</string>
         </array>
     </customFonts>
@@ -18,7 +18,7 @@
         <!--View Controller-->
         <scene sceneID="CPg-vf-fhG">
             <objects>
-                <viewController id="wJ6-1N-l95" sceneMemberID="viewController">
+                <viewController id="wJ6-1N-l95" customClass="ViewController" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XxD-Q0-Nng">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,12 +30,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bXO-oC-hVZ">
+                            <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bXO-oC-hVZ">
                                 <rect key="frame" x="133" y="354" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon Key" translatesAutoresizingMaskIntoConstraints="NO" id="Ppd-MZ-qKj">
                                 <rect key="frame" x="88" y="348" width="42" height="42"/>
@@ -45,21 +45,11 @@
                                 <rect key="frame" x="93" y="315" width="33" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Usuario" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLZ-IO-mvS">
-                                <rect key="frame" x="133" y="315" width="123" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" enablesReturnKeyAutomatically="YES" smartQuotesType="no" textContentType="username"/>
-                                <connections>
-                                    <outlet property="delegate" destination="wJ6-1N-l95" id="KOj-yu-Kxd"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eazy  Pets" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxq-V5-auO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Easy  Petz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxq-V5-auO">
                                 <rect key="frame" x="100" y="69" width="174" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="72"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.61960784310000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myB-uL-Ffe">
@@ -78,8 +68,15 @@
                                     <segue destination="s6I-WN-uEW" kind="show" id="C91-up-xfL"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NxH-0g-1sQ">
+                                <rect key="frame" x="133" y="315" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="continue" enablesReturnKeyAutomatically="YES" textContentType="username"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.61960784313725492" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="FDk-X4-zmg"/>
                     </view>
                 </viewController>
@@ -90,7 +87,7 @@
         <!--Inicio-->
         <scene sceneID="vwX-on-5ka">
             <objects>
-                <viewController id="OsL-nF-4It" sceneMemberID="viewController">
+                <viewController id="OsL-nF-4It" customClass="Inicio" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rT1-50-tLH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -278,12 +275,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRM-sQ-1fb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1090" y="431"/>
+            <point key="canvasLocation" x="-1090" y="434"/>
         </scene>
         <!--Buscar-->
         <scene sceneID="KcP-g2-beR">
             <objects>
-                <viewController id="leX-iQ-cQd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Mapa" id="leX-iQ-cQd" customClass="Buscar" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fRm-jT-BY3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -309,7 +306,7 @@
                                 <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="iFilter"/>
                                 <connections>
-                                    <segue destination="Uau-hB-9LG" kind="show" id="Hx1-xg-3uY"/>
+                                    <segue destination="Uau-hB-9LG" kind="show" id="4En-8b-txB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -318,6 +315,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Buscar" image="Icon Search" id="RQC-Yd-EoJ"/>
                     <connections>
+                        <outlet property="MapView" destination="CM3-Y1-g1X" id="QtM-xg-BSw"/>
+                        <outlet property="Mapa" destination="CM3-Y1-g1X" id="nzc-yJ-Yhm"/>
+                        <outlet property="map" destination="CM3-Y1-g1X" id="b7R-Rn-TiD"/>
+                        <outlet property="mapView" destination="CM3-Y1-g1X" id="KBP-xb-ofu"/>
                         <outlet property="searchDisplayController" destination="Zwg-8q-DPJ" id="6df-SO-Mpz"/>
                     </connections>
                 </viewController>
@@ -336,7 +337,7 @@
         <!--Mi Perfil-->
         <scene sceneID="qI6-08-Fxu">
             <objects>
-                <viewController id="IYj-dR-MVT" sceneMemberID="viewController">
+                <viewController id="IYj-dR-MVT" customClass="Profile" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4s8-64-EZ9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -442,7 +443,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="boton_contactar"/>
                                 <connections>
-                                    <segue destination="nsL-LX-xaz" kind="show" id="o29-Dt-mFg"/>
+                                    <segue destination="nsL-LX-xaz" kind="show" id="VHF-cZ-c8N"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Animal_3" image="user_1_cir" translatesAutoresizingMaskIntoConstraints="NO" id="WVh-go-Wka">
@@ -462,7 +463,7 @@
         <!--Mis Mascotas-->
         <scene sceneID="Xxn-fC-AWK">
             <objects>
-                <viewController storyboardIdentifier="Mis_Mascotas" id="2e0-2G-G0k" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Mis_Mascotas" id="2e0-2G-G0k" customClass="Mascotas" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Okm-By-XVs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -620,10 +621,10 @@
             </objects>
             <point key="canvasLocation" x="-122.40000000000001" y="449.32533733133437"/>
         </scene>
-        <!--View Controller-->
+        <!--Editar Mascotas-->
         <scene sceneID="YPQ-RT-Qfp">
             <objects>
-                <viewController id="zzF-61-1dy" sceneMemberID="viewController">
+                <viewController id="zzF-61-1dy" customClass="Editar_Mascotas" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PLn-hy-tyn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -684,7 +685,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="boton_cancelar"/>
                                 <connections>
-                                    <segue destination="bLw-qP-USt" kind="unwind" unwindAction="unwindSegue:" id="mnx-eO-qb9"/>
+                                    <segue destination="bLw-qP-USt" kind="unwind" unwindAction="unwindToMascotasWithSegue:" id="axc-SP-eEl"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Perro" borderStyle="roundedRect" placeholder="Introduzca el tipo de animal" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="7Yg-kU-XuQ">
@@ -724,7 +725,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="boton_editar"/>
                                 <connections>
-                                    <segue destination="0Aw-Ri-e0j" kind="show" id="WDS-0c-4cG"/>
+                                    <segue destination="bLw-qP-USt" kind="unwind" unwindAction="unwindToMascotasWithSegue:" id="BOR-gw-D82"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -740,48 +741,27 @@
         <!--View Controller-->
         <scene sceneID="ZXE-op-Lb4">
             <objects>
-                <viewController id="s6I-WN-uEW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Registro" id="s6I-WN-uEW" customClass="ViewController" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iaz-Kc-59b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q5H-1P-CYS">
-                                <rect key="frame" x="113" y="409" width="149" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" textContentType="password"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Nombres" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m38-da-nhK">
-                                <rect key="frame" x="113" y="258" width="149" height="30"/>
+                                <rect key="frame" x="113" y="224" width="149" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartQuotesType="no" textContentType="username"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eazy  Pets" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-9C-jaa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Easy  Petz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-9C-jaa">
                                 <rect key="frame" x="107" y="20" width="174" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="72"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.61960784310000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Apellidos" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t6i-FP-I6a">
-                                <rect key="frame" x="113" y="296" width="149" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartQuotesType="no" textContentType="username"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Usuario" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lZR-g6-sSt">
-                                <rect key="frame" x="113" y="371" width="149" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartQuotesType="no" textContentType="username"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Correo" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1g-nM-7VC">
-                                <rect key="frame" x="113" y="447" width="149" height="30"/>
+                                <rect key="frame" x="113" y="262" width="149" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -795,8 +775,29 @@
                                     <segue destination="fzH-0k-Hq5" kind="show" id="Txh-2a-uRZ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q5H-1P-CYS">
+                                <rect key="frame" x="113" y="338" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Usuario" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lZR-g6-sSt">
+                                <rect key="frame" x="113" y="300" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartQuotesType="no" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" fixedFrame="YES" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Correo" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1g-nM-7VC">
+                                <rect key="frame" x="113" y="376" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartQuotesType="no" textContentType="username"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.61960784310000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="zg0-ox-Cwh"/>
                     </view>
                 </viewController>
@@ -807,23 +808,23 @@
         <!--View Controller-->
         <scene sceneID="yBf-ec-t68">
             <objects>
-                <viewController id="fzH-0k-Hq5" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Registro Existoso" id="fzH-0k-Hq5" customClass="ViewController" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fY5-c2-mr0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eazy  Pets" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVe-OQ-JRS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Easy  Petz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVe-OQ-JRS">
                                 <rect key="frame" x="107" y="20" width="174" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="72"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.61960784310000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¡Registro Exitoso!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etd-1L-ost">
                                 <rect key="frame" x="-29" y="199" width="447" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="44"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.61960784310000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shU-qS-KzX">
@@ -835,7 +836,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.61960784310000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Eye-Dt-G17"/>
                     </view>
                 </viewController>
@@ -843,10 +844,10 @@
             </objects>
             <point key="canvasLocation" x="-1090.4000000000001" y="-440.32983508245883"/>
         </scene>
-        <!--View Controller-->
+        <!--Agregar Mascotas-->
         <scene sceneID="9el-VL-rcc">
             <objects>
-                <viewController id="FgG-JI-jeo" sceneMemberID="viewController">
+                <viewController id="FgG-JI-jeo" customClass="Agregar_Mascotas" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YYA-AH-iVZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -901,7 +902,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="boton_cancelar"/>
                                 <connections>
-                                    <segue destination="0Aw-Ri-e0j" kind="show" id="McL-ug-zVG"/>
+                                    <segue destination="Jzg-dW-vdR" kind="unwind" unwindAction="unwindToMascotasWithSegue:" id="2o8-og-6YN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0an-cp-YDs">
@@ -909,7 +910,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="boton_agregar1"/>
                                 <connections>
-                                    <segue destination="0Aw-Ri-e0j" kind="show" id="e5l-7G-4lN"/>
+                                    <segue destination="Jzg-dW-vdR" kind="unwind" unwindAction="unwindToMascotasWithSegue:" id="3Ti-3z-KYi"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduzca el tipo de animal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YaD-70-HXU">
@@ -960,29 +961,14 @@
                     <navigationItem key="navigationItem" id="UWY-Be-6i1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUi-1M-AL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Jzg-dW-vdR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1054" y="-273"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="2Ku-rE-PWI">
-            <objects>
-                <navigationController id="dcU-Jp-dZb" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tg5-J0-oOy">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n2J-3n-Cve">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZdE-TN-wcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1055" y="-1097"/>
-        </scene>
-        <!--View Controller-->
+        <!--Filtro-->
         <scene sceneID="fQz-Au-jtA">
             <objects>
-                <viewController id="Uau-hB-9LG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Filtros" id="Uau-hB-9LG" customClass="Filtro" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P6N-zj-Q3I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1076,7 +1062,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="boton_buscar"/>
                                 <connections>
-                                    <segue destination="0Aw-Ri-e0j" kind="show" id="3od-CA-uBJ"/>
+                                    <segue destination="Vd6-W2-UCg" kind="unwind" unwindAction="unwindToBuscarWithSegue:" id="Ciy-yM-mai"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1085,13 +1071,14 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDs-R8-hkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Vd6-W2-UCg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-2100" y="1259.8200899550227"/>
         </scene>
         <!--Mi Perfil-->
         <scene sceneID="dJZ-lH-TSj">
             <objects>
-                <viewController id="W6g-TP-BMO" sceneMemberID="viewController">
+                <viewController id="W6g-TP-BMO" customClass="ProfileVets" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aQ4-dI-4sV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1209,7 +1196,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="boton_regresar"/>
                                 <connections>
-                                    <segue destination="0Aw-Ri-e0j" kind="show" id="G8W-6G-i9A"/>
+                                    <segue destination="VOE-S2-pjF" kind="unwind" unwindAction="unwindToContactarVetsWithSegue:" id="abv-AQ-Q4E"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1219,13 +1206,14 @@
                     <tabBarItem key="tabBarItem" title="Mi Perfil" image="Icon Profile" id="Ud0-gr-okw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yUh-OK-pcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VOE-S2-pjF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1397.5999999999999" y="1306.5967016491754"/>
         </scene>
         <!--Mis Mascotas-->
         <scene sceneID="pzt-Pl-YYZ">
             <objects>
-                <viewController id="nsL-LX-xaz" sceneMemberID="viewController">
+                <viewController id="nsL-LX-xaz" customClass="ContactarVets" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IpW-Bl-la6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1303,16 +1291,13 @@
                                 <rect key="frame" x="282" y="546" width="80" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="boton_contactar"/>
-                                <connections>
-                                    <segue destination="W6g-TP-BMO" kind="show" id="R0x-KR-lbx"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-UG-1l1">
                                 <rect key="frame" x="280" y="434" width="80" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="boton_contactar"/>
                                 <connections>
-                                    <segue destination="W6g-TP-BMO" kind="show" id="faJ-GF-G2F"/>
+                                    <segue destination="W6g-TP-BMO" kind="show" id="lQ5-Pq-pLX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enK-Hp-3sD">
@@ -1324,9 +1309,6 @@
                                 <rect key="frame" x="280" y="181" width="80" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="boton_contactar"/>
-                                <connections>
-                                    <segue destination="W6g-TP-BMO" kind="show" id="anS-2s-tiy"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dr. Rafael García" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlB-nj-RHT">
                                 <rect key="frame" x="137" y="266" width="127" height="21"/>
@@ -1410,6 +1392,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Icon Paw"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJO-PZ-6zQ">
+                                <rect key="frame" x="159" y="604" width="108" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="boton_regresar"/>
+                                <connections>
+                                    <segue destination="LtP-pT-WzF" kind="unwind" unwindAction="unwindToProfileWithSegue:" id="2J5-pR-aLs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1Z-Vz-Zif"/>
@@ -1417,6 +1407,7 @@
                     <tabBarItem key="tabBarItem" title="Mis Mascotas" image="Icon Paw" selectedImage="Icon Paw" id="lcV-Th-aEf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1H-7j-SIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="LtP-pT-WzF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="676" y="1306.5967016491754"/>
         </scene>
@@ -1458,8 +1449,7 @@
         <image name="user_1_cir" width="1224" height="936"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R0x-KR-lbx"/>
         <segue reference="G0e-H3-com"/>
-        <segue reference="McL-ug-zVG"/>
+        <segue reference="tY8-RO-9Y8"/>
     </inferredMetricsTieBreakers>
 </document>
