@@ -17,7 +17,6 @@
 		A5299E9220991785007A37B2 /* Agregar Mascotas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E9120991785007A37B2 /* Agregar Mascotas.swift */; };
 		A5299E94209917A6007A37B2 /* Inicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E93209917A6007A37B2 /* Inicio.swift */; };
 		A5299E962099185A007A37B2 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E952099185A007A37B2 /* Registro.swift */; };
-		A5299E9D20992233007A37B2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5299E9C20992233007A37B2 /* MapKit.framework */; };
 		A5AE3DCE2097A74600674904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AE3DCD2097A74600674904 /* AppDelegate.swift */; };
 		A5AE3DD02097A74600674904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AE3DCF2097A74600674904 /* ViewController.swift */; };
 		A5AE3DD32097A74600674904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AE3DD12097A74600674904 /* Main.storyboard */; };
@@ -38,7 +37,6 @@
 		A5299E9120991785007A37B2 /* Agregar Mascotas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Agregar Mascotas.swift"; sourceTree = "<group>"; };
 		A5299E93209917A6007A37B2 /* Inicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inicio.swift; sourceTree = "<group>"; };
 		A5299E952099185A007A37B2 /* Registro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
-		A5299E9C20992233007A37B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A5AE3DCA2097A74600674904 /* EazyPetz2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EazyPetz2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AE3DCD2097A74600674904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5AE3DCF2097A74600674904 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5299E9D20992233007A37B2 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +62,6 @@
 		A5299E9B20992233007A37B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A5299E9C20992233007A37B2 /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,7 +150,7 @@
 						CreatedOnToolsVersion = 9.3;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};

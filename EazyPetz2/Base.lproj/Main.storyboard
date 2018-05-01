@@ -285,10 +285,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CM3-Y1-g1X">
-                                <rect key="frame" x="0.0" y="76" width="375" height="542"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Buscar" translatesAutoresizingMaskIntoConstraints="NO" id="hf4-I2-wSk">
                                 <rect key="frame" x="0.0" y="20" width="320" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -309,16 +305,19 @@
                                     <segue destination="Uau-hB-9LG" kind="show" id="4En-8b-txB"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5w8-IX-k8P">
+                                <rect key="frame" x="0.0" y="76" width="375" height="542"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="leX-iQ-cQd" id="g4w-ZY-m2v"/>
+                                </connections>
+                            </mapView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.61960784313725492" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Tkr-jh-gzS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Buscar" image="Icon Search" id="RQC-Yd-EoJ"/>
                     <connections>
-                        <outlet property="MapView" destination="CM3-Y1-g1X" id="QtM-xg-BSw"/>
-                        <outlet property="Mapa" destination="CM3-Y1-g1X" id="nzc-yJ-Yhm"/>
-                        <outlet property="map" destination="CM3-Y1-g1X" id="b7R-Rn-TiD"/>
-                        <outlet property="mapView" destination="CM3-Y1-g1X" id="KBP-xb-ofu"/>
                         <outlet property="searchDisplayController" destination="Zwg-8q-DPJ" id="6df-SO-Mpz"/>
                     </connections>
                 </viewController>
@@ -332,7 +331,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-1091" y="1308"/>
+            <point key="canvasLocation" x="-1092" y="1307.4962518740631"/>
         </scene>
         <!--Mi Perfil-->
         <scene sceneID="qI6-08-Fxu">
