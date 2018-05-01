@@ -17,6 +17,7 @@
 		A5299E9220991785007A37B2 /* Agregar Mascotas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E9120991785007A37B2 /* Agregar Mascotas.swift */; };
 		A5299E94209917A6007A37B2 /* Inicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E93209917A6007A37B2 /* Inicio.swift */; };
 		A5299E962099185A007A37B2 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E952099185A007A37B2 /* Registro.swift */; };
+		A52C437A20992A1300D1EC4A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A52C437920992A1300D1EC4A /* Default-568h@2x.png */; };
 		A5AE3DCE2097A74600674904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AE3DCD2097A74600674904 /* AppDelegate.swift */; };
 		A5AE3DD02097A74600674904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AE3DCF2097A74600674904 /* ViewController.swift */; };
 		A5AE3DD32097A74600674904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AE3DD12097A74600674904 /* Main.storyboard */; };
@@ -37,7 +38,8 @@
 		A5299E9120991785007A37B2 /* Agregar Mascotas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Agregar Mascotas.swift"; sourceTree = "<group>"; };
 		A5299E93209917A6007A37B2 /* Inicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inicio.swift; sourceTree = "<group>"; };
 		A5299E952099185A007A37B2 /* Registro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
-		A5AE3DCA2097A74600674904 /* EazyPetz2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EazyPetz2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52C437920992A1300D1EC4A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A5AE3DCA2097A74600674904 /* Easy Petz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Petz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AE3DCD2097A74600674904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5AE3DCF2097A74600674904 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5AE3DD22097A74600674904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,7 +71,8 @@
 		A5AE3DC12097A74600674904 = {
 			isa = PBXGroup;
 			children = (
-				A5AE3DCC2097A74600674904 /* EazyPetz2 */,
+				A52C437920992A1300D1EC4A /* Default-568h@2x.png */,
+				A5AE3DCC2097A74600674904 /* Easy Petz */,
 				A5AE3DCB2097A74600674904 /* Products */,
 				A5299E9B20992233007A37B2 /* Frameworks */,
 			);
@@ -78,12 +81,12 @@
 		A5AE3DCB2097A74600674904 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5AE3DCA2097A74600674904 /* EazyPetz2.app */,
+				A5AE3DCA2097A74600674904 /* Easy Petz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A5AE3DCC2097A74600674904 /* EazyPetz2 */ = {
+		A5AE3DCC2097A74600674904 /* Easy Petz */ = {
 			isa = PBXGroup;
 			children = (
 				A5AE3DCD2097A74600674904 /* AppDelegate.swift */,
@@ -104,7 +107,7 @@
 				A5AE3DD62097A74700674904 /* LaunchScreen.storyboard */,
 				A5AE3DD92097A74800674904 /* Info.plist */,
 			);
-			path = EazyPetz2;
+			path = "Easy Petz";
 			sourceTree = "<group>";
 		};
 		A5AE3DDF2097A88500674904 /* Font Beyond */ = {
@@ -119,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5AE3DC92097A74600674904 /* EazyPetz2 */ = {
+		A5AE3DC92097A74600674904 /* Easy Petz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5AE3DDC2097A74800674904 /* Build configuration list for PBXNativeTarget "EazyPetz2" */;
+			buildConfigurationList = A5AE3DDC2097A74800674904 /* Build configuration list for PBXNativeTarget "Easy Petz" */;
 			buildPhases = (
 				A5AE3DC62097A74600674904 /* Sources */,
 				A5AE3DC72097A74600674904 /* Frameworks */,
@@ -131,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = EazyPetz2;
+			name = "Easy Petz";
 			productName = EazyPetz2;
-			productReference = A5AE3DCA2097A74600674904 /* EazyPetz2.app */;
+			productReference = A5AE3DCA2097A74600674904 /* Easy Petz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A5AE3DC52097A74600674904 /* Build configuration list for PBXProject "EazyPetz2" */;
+			buildConfigurationList = A5AE3DC52097A74600674904 /* Build configuration list for PBXProject "Easy Petz" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,7 +172,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5AE3DC92097A74600674904 /* EazyPetz2 */,
+				A5AE3DC92097A74600674904 /* Easy Petz */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +187,7 @@
 				A5AE3DE32097A88800674904 /* beyond_the_mountains.ttf in Resources */,
 				A5AE3DD52097A74700674904 /* Assets.xcassets in Resources */,
 				A5AE3DD32097A74600674904 /* Main.storyboard in Resources */,
+				A52C437A20992A1300D1EC4A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +388,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A5AE3DC52097A74600674904 /* Build configuration list for PBXProject "EazyPetz2" */ = {
+		A5AE3DC52097A74600674904 /* Build configuration list for PBXProject "Easy Petz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5AE3DDA2097A74800674904 /* Debug */,
@@ -393,7 +397,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5AE3DDC2097A74800674904 /* Build configuration list for PBXNativeTarget "EazyPetz2" */ = {
+		A5AE3DDC2097A74800674904 /* Build configuration list for PBXNativeTarget "Easy Petz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5AE3DDD2097A74800674904 /* Debug */,
