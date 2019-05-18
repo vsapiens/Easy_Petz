@@ -15,79 +15,18 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="CPg-vf-fhG">
             <objects>
-                <viewController id="wJ6-1N-l95" customClass="ViewController" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XxD-Q0-Nng">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Aún no tienes cuenta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ki2-WB-qoS">
-                                <rect key="frame" x="124" y="593" width="141" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bXO-oC-hVZ">
-                                <rect key="frame" x="133" y="354" width="123" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
-                            </textField>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon Key" translatesAutoresizingMaskIntoConstraints="NO" id="Ppd-MZ-qKj">
-                                <rect key="frame" x="88" y="348" width="42" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon Profile" translatesAutoresizingMaskIntoConstraints="NO" id="HBq-2l-71t">
-                                <rect key="frame" x="93" y="315" width="33" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Easy  Petz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxq-V5-auO">
-                                <rect key="frame" x="100" y="69" width="174" height="206"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="72"/>
-                                <color key="textColor" red="1" green="0.61960784310000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myB-uL-Ffe">
-                                <rect key="frame" x="113" y="419" width="148" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="iniciarsesion"/>
-                                <connections>
-                                    <segue destination="0Aw-Ri-e0j" kind="show" id="tY8-RO-9Y8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XQ-tJ-3ff">
-                                <rect key="frame" x="129" y="617" width="118" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Regístrate Aquí" image="boton_registrarse"/>
-                                <connections>
-                                    <segue destination="s6I-WN-uEW" kind="show" id="C91-up-xfL"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NxH-0g-1sQ">
-                                <rect key="frame" x="133" y="315" width="123" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="continue" enablesReturnKeyAutomatically="YES" textContentType="username"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="FDk-X4-zmg"/>
-                    </view>
-                </viewController>
+                <viewController id="wJ6-1N-l95" userLabel="Login" customClass="ViewController" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PfL-tp-ajJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2100" y="169.56521739130437"/>
         </scene>
-        <!--Inicio-->
+        <!--Feed-->
         <scene sceneID="vwX-on-5ka">
             <objects>
-                <viewController id="OsL-nF-4It" customClass="Inicio" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OsL-nF-4It" userLabel="Feed" customClass="Inicio" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rT1-50-tLH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1430,7 +1369,6 @@
         <image name="Animal_5_cir" width="1280" height="936"/>
         <image name="Animal_6_cir" width="1280" height="936"/>
         <image name="Icon Add" width="24" height="24"/>
-        <image name="Icon Key" width="40" height="24"/>
         <image name="Icon Left" width="24" height="24"/>
         <image name="Icon Paw" width="27" height="24"/>
         <image name="Icon Profile" width="28" height="24"/>
@@ -1455,11 +1393,9 @@
         <image name="greyline" width="659" height="200"/>
         <image name="iFilter" width="24" height="24"/>
         <image name="iHome" width="24" height="24"/>
-        <image name="iniciarsesion" width="701" height="254"/>
         <image name="user_1_cir" width="1224" height="936"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ohv-RF-KD3"/>
-        <segue reference="tY8-RO-9Y8"/>
     </inferredMetricsTieBreakers>
 </document>

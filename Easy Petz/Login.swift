@@ -7,10 +7,12 @@
 //
 
 import UIKit
-import MapKit
+import Firebase
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var userField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,22 @@ class ViewController: UIViewController {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return (true)
+    }
+    @IBAction func didTapEmailLogin(_sender: AnyObject) {
+        if let email = self.userField.text, let pass = self.passwordField.text {
+            showSpinner{
+                Auth.auth().signIn(withEmail: email, password: pass){(user,error) in
+                    self.hideSpinner{
+                        if let error = error{
+                            self.showMessagePrompt(error.localizedDescription)
+                            return
+                        }
+                        self.navigationController!.popViewController(animated: true)
+                    }
+                    
+                }
+            }
+        }
     }
 }
 

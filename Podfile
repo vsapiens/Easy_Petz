@@ -7,4 +7,5 @@ target 'Easy Petz' do
 
   # Pods for Easy Petz
 pod 'Firebase'
+pod 'Firebase/Auth'
 end

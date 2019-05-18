@@ -17,11 +17,11 @@
 		A5299E8E2099174A007A37B2 /* Mascotas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E8D2099174A007A37B2 /* Mascotas.swift */; };
 		A5299E9020991764007A37B2 /* Editar Mascotas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E8F20991764007A37B2 /* Editar Mascotas.swift */; };
 		A5299E9220991785007A37B2 /* Agregar Mascotas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E9120991785007A37B2 /* Agregar Mascotas.swift */; };
-		A5299E94209917A6007A37B2 /* Inicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E93209917A6007A37B2 /* Inicio.swift */; };
-		A5299E962099185A007A37B2 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E952099185A007A37B2 /* Registro.swift */; };
+		A5299E94209917A6007A37B2 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E93209917A6007A37B2 /* Feed.swift */; };
+		A5299E962099185A007A37B2 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299E952099185A007A37B2 /* Register.swift */; };
 		A52C437A20992A1300D1EC4A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A52C437920992A1300D1EC4A /* Default-568h@2x.png */; };
 		A5AE3DCE2097A74600674904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AE3DCD2097A74600674904 /* AppDelegate.swift */; };
-		A5AE3DD02097A74600674904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AE3DCF2097A74600674904 /* ViewController.swift */; };
+		A5AE3DD02097A74600674904 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AE3DCF2097A74600674904 /* Login.swift */; };
 		A5AE3DD32097A74600674904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AE3DD12097A74600674904 /* Main.storyboard */; };
 		A5AE3DD52097A74700674904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AE3DD42097A74700674904 /* Assets.xcassets */; };
 		A5AE3DD82097A74700674904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AE3DD62097A74700674904 /* LaunchScreen.storyboard */; };
@@ -42,12 +42,12 @@
 		A5299E8D2099174A007A37B2 /* Mascotas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mascotas.swift; sourceTree = "<group>"; };
 		A5299E8F20991764007A37B2 /* Editar Mascotas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Editar Mascotas.swift"; sourceTree = "<group>"; };
 		A5299E9120991785007A37B2 /* Agregar Mascotas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Agregar Mascotas.swift"; sourceTree = "<group>"; };
-		A5299E93209917A6007A37B2 /* Inicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inicio.swift; sourceTree = "<group>"; };
-		A5299E952099185A007A37B2 /* Registro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
+		A5299E93209917A6007A37B2 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		A5299E952099185A007A37B2 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		A52C437920992A1300D1EC4A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A5AE3DCA2097A74600674904 /* Easy Petz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Petz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AE3DCD2097A74600674904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5AE3DCF2097A74600674904 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5AE3DCF2097A74600674904 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		A5AE3DD22097A74600674904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5AE3DD42097A74700674904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5AE3DD72097A74700674904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				A5AE3DCD2097A74600674904 /* AppDelegate.swift */,
-				A5AE3DCF2097A74600674904 /* ViewController.swift */,
+				A5AE3DCF2097A74600674904 /* Login.swift */,
 				A5299E83209913AB007A37B2 /* ContactarVets.swift */,
 				A50FF2A02290844F005170EB /* GoogleService-Info.plist */,
 				A5299E8720991674007A37B2 /* ProfileVets.swift */,
@@ -108,9 +108,9 @@
 				A5299E89209916E5007A37B2 /* Buscar.swift */,
 				A5299E8D2099174A007A37B2 /* Mascotas.swift */,
 				A5299E8F20991764007A37B2 /* Editar Mascotas.swift */,
-				A5299E952099185A007A37B2 /* Registro.swift */,
+				A5299E952099185A007A37B2 /* Register.swift */,
 				A5299E9120991785007A37B2 /* Agregar Mascotas.swift */,
-				A5299E93209917A6007A37B2 /* Inicio.swift */,
+				A5299E93209917A6007A37B2 /* Feed.swift */,
 				A5AE3DDF2097A88500674904 /* Font Beyond */,
 				A5AE3DD12097A74600674904 /* Main.storyboard */,
 				A5AE3DD42097A74700674904 /* Assets.xcassets */,
@@ -135,7 +135,6 @@
 				2DC2DA97D5B98944933591AB /* Pods-Easy Petz.debug.xcconfig */,
 				0F4A83AB7EF808D90EED0864 /* Pods-Easy Petz.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Easy Petz/Pods-Easy Petz-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -234,6 +234,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -272,12 +273,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5299E9020991764007A37B2 /* Editar Mascotas.swift in Sources */,
-				A5299E962099185A007A37B2 /* Registro.swift in Sources */,
+				A5299E962099185A007A37B2 /* Register.swift in Sources */,
 				A5299E9220991785007A37B2 /* Agregar Mascotas.swift in Sources */,
 				A5299E8820991674007A37B2 /* ProfileVets.swift in Sources */,
-				A5299E94209917A6007A37B2 /* Inicio.swift in Sources */,
+				A5299E94209917A6007A37B2 /* Feed.swift in Sources */,
 				A5299E8620991534007A37B2 /* Profile.swift in Sources */,
-				A5AE3DD02097A74600674904 /* ViewController.swift in Sources */,
+				A5AE3DD02097A74600674904 /* Login.swift in Sources */,
 				A5299E8C20991720007A37B2 /* Filtro.swift in Sources */,
 				A5299E8E2099174A007A37B2 /* Mascotas.swift in Sources */,
 				A5299E8A209916E5007A37B2 /* Buscar.swift in Sources */,
