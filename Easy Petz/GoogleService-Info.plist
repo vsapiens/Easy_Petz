@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>893300888534-mj5evfh4j3smvl5lhk3c2ahrcqc3ni3s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.893300888534-mj5evfh4j3smvl5lhk3c2ahrcqc3ni3s</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAXHt-xdNBD6U7hDOXWnrJ_nY1x2jM7wXA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>893300888534</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.itesm.A01039859.EazyPetz2</string>
+	<key>PROJECT_ID</key>
+	<string>easy-petz</string>
+	<key>STORAGE_BUCKET</key>
+	<string>easy-petz.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:893300888534:ios:f39d189a5bcaf4da</string>
+	<key>DATABASE_URL</key>
+	<string>https://easy-petz.firebaseio.com</string>
+</dict>
+</plist>

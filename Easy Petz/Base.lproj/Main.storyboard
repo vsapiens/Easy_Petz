@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wJ6-1N-l95">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wJ6-1N-l95">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +18,7 @@
         <!--View Controller-->
         <scene sceneID="CPg-vf-fhG">
             <objects>
-                <viewController id="wJ6-1N-l95" customClass="ViewController" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wJ6-1N-l95" customClass="ViewController" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XxD-Q0-Nng">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,7 @@
         <!--Inicio-->
         <scene sceneID="vwX-on-5ka">
             <objects>
-                <viewController id="OsL-nF-4It" customClass="Inicio" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OsL-nF-4It" customClass="Inicio" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rT1-50-tLH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -280,7 +280,7 @@
         <!--Buscar-->
         <scene sceneID="KcP-g2-beR">
             <objects>
-                <viewController storyboardIdentifier="Mapa" id="leX-iQ-cQd" customClass="Buscar" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Mapa" id="leX-iQ-cQd" customClass="Buscar" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fRm-jT-BY3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -336,7 +336,7 @@
         <!--Mi Perfil-->
         <scene sceneID="qI6-08-Fxu">
             <objects>
-                <viewController id="IYj-dR-MVT" customClass="Profile" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IYj-dR-MVT" customClass="Profile" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4s8-64-EZ9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -466,7 +466,7 @@
         <!--Mis Mascotas-->
         <scene sceneID="Xxn-fC-AWK">
             <objects>
-                <viewController storyboardIdentifier="Mis_Mascotas" id="2e0-2G-G0k" customClass="Mascotas" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Mis_Mascotas" id="2e0-2G-G0k" customClass="Mascotas" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Okm-By-XVs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -627,7 +627,7 @@
         <!--Editar Mascotas-->
         <scene sceneID="YPQ-RT-Qfp">
             <objects>
-                <viewController id="zzF-61-1dy" customClass="Editar_Mascotas" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zzF-61-1dy" customClass="Editar_Mascotas" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PLn-hy-tyn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -744,7 +744,7 @@
         <!--View Controller-->
         <scene sceneID="ZXE-op-Lb4">
             <objects>
-                <viewController storyboardIdentifier="Registro" id="s6I-WN-uEW" customClass="ViewController" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Registro" id="s6I-WN-uEW" customClass="ViewController" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iaz-Kc-59b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -811,7 +811,7 @@
         <!--View Controller-->
         <scene sceneID="yBf-ec-t68">
             <objects>
-                <viewController storyboardIdentifier="Registro Existoso" id="fzH-0k-Hq5" customClass="ViewController" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Registro Existoso" id="fzH-0k-Hq5" customClass="ViewController" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fY5-c2-mr0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -850,7 +850,7 @@
         <!--Agregar Mascotas-->
         <scene sceneID="9el-VL-rcc">
             <objects>
-                <viewController id="FgG-JI-jeo" customClass="Agregar_Mascotas" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FgG-JI-jeo" customClass="Agregar_Mascotas" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YYA-AH-iVZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -971,7 +971,7 @@
         <!--Filtro-->
         <scene sceneID="fQz-Au-jtA">
             <objects>
-                <viewController storyboardIdentifier="Filtros" id="Uau-hB-9LG" customClass="Filtro" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Filtros" id="Uau-hB-9LG" customClass="Filtro" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P6N-zj-Q3I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1088,7 +1088,7 @@
         <!--Mi Perfil-->
         <scene sceneID="dJZ-lH-TSj">
             <objects>
-                <viewController id="W6g-TP-BMO" customClass="ProfileVets" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="W6g-TP-BMO" customClass="ProfileVets" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aQ4-dI-4sV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1223,7 +1223,7 @@
         <!--Mis Mascotas-->
         <scene sceneID="pzt-Pl-YYZ">
             <objects>
-                <viewController id="nsL-LX-xaz" customClass="ContactarVets" customModule="EazyPetz2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nsL-LX-xaz" customClass="ContactarVets" customModule="Easy_Petz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IpW-Bl-la6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1459,7 +1459,7 @@
         <image name="user_1_cir" width="1224" height="936"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="G0e-H3-com"/>
+        <segue reference="ohv-RF-KD3"/>
         <segue reference="tY8-RO-9Y8"/>
     </inferredMetricsTieBreakers>
 </document>
